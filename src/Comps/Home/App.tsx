@@ -18,7 +18,7 @@ function App(props: {loggedin: boolean}) {
   });
 
   function scrollOnDown(){
-    scroll.scrollTo(1000)
+    scroll.scrollToBottom()
   }
 
   return (
