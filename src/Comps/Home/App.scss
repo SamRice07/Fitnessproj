@@ -1,0 +1,159 @@
+* {
+  font-family: 'Roboto Slab', 'Courier New', serif;
+  
+}
+
+$color: #fd5e53;
+
+
+
+.headcircle{
+  position: absolute;
+  transform: translate(-50%, -50%); 
+  height: 40%;
+  transform: rotate(180deg) scaleX(-1);
+  width: 100%;
+  border-radius: 20vw 30vh 0 0;
+  background-color: #2A383F;
+  z-index: 1;
+}
+
+.headTxt{
+  position: absolute;
+  margin: 0 auto;
+  z-index: 2;
+  left: 50%;
+  font-size: 2vw;
+  left: 35%;
+  color: #EEE6D9;
+}
+
+#pricingSpan{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+  left: 25%;
+  cursor: pointer;
+}
+#pricingSpan a{
+  font-size: 1vw;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+#pricingSpan a:before,
+#pricingSpan a:after{
+  position: absolute;
+  content: "PRICING";
+  height: 5vw;
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+#pricingSpan a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+#pricingSpan a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+#pricingSpan a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+.everythingElse {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.subEverything{
+  position: absolute;
+  top: 45%;
+}
+
+.hypeText{
+  background-color: #EEE6D9;
+  width: 60vw;
+  height: 40vh;
+  margin: 10px;
+  font-size: 1vw;
+  float: left;
+  margin-left: 10px;
+}
+
+.hyperText {
+  margin: 10px;
+}
+
+.hypeImg{
+  float: right;
+  width: 25vw;
+  height: 40vh;
+  margin: 10px;
+}
+
+.hype{
+  position: relative;
+  left: 5%;
+}
+
+.hypeText1{
+  background-color: #EEE6D9;
+  width: 60vw;
+  height: 40vh;
+  margin: 10px;
+  font-size: 1vw;
+  float: right;
+  margin-left: 10px;
+}
+
+.hyperText1{
+  margin: 10px;
+}
+
+.hypeImg1{
+  float: left;
+  width: 25vw;
+  height: 40vh;
+  margin: 10px;
+}
+
+.hype1{
+  position: relative;
+  left: 5%;
+  margin-top: 10px;
+
+}
+
+
+
+
+
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.priceyTable{
+  position: relative;
+  left: 8%;
+}
